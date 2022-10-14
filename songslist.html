@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>榜单</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/songslist.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/common.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="w navbox">
+            <div class="navLeft">
+                <div class="logo">
+                    <a href="#">
+                        <img src="https://www.kugou.com/common/images/kugou_white.png" alt="" width="100%">
+                    </a>
+                </div>
+
+                <div class="search">
+                    <div></div>
+                    <input type="text" class="searchinput" placeholder="YG新歌首发抢先听">
+                </div>
+            </div>
+            <div class="navRight">
+                <ul class="navRightli">
+                    <li> <a href="./openPlatform.html" style="color:#fff;">音乐人</a> </li>
+                    <li>主播电台</li>
+                    <li>开放平台</li>
+                    <li>VIP会员</li>
+                    <li>|</li>
+                </ul>
+                <div class="login">登录</div>
+            </div>
+        </div>
+    </nav>
+    <div class="loginmark">
+        <div class="loginmarkbox">
+            <div class="closeLogin"></div>
+            <div class="loginmarkboxtop">
+                <div class="instructions"></div>
+                <div class="erweima01"></div>
+            </div>
+            <div class="loginmarkcontain" id="loginmarkcontain-id">
+                <h2>手机扫码，安全登录酷狗</h2>
+                <div class="pics">
+                    <div class="loginmarkcontain-img loginmarkcontain-img01">
+                        <img src="./img/erweima.png" width="100%" alt="">
+                    </div>
+                    <div class="loginmarkcontain-img loginmarkcontain-img02">
+                        <img src="https://staticssl.kugou.com/common/images/login/scan-tip.png?20190422" width="100%"
+                            alt="">
+                    </div>
+                </div>
+
+                <p class="loginmarkcontain-p">打开<a href="#" class="loginmarkcontain-a">手机酷狗音乐</a>，扫一扫登录</p>
+            </div>
+
+            <div class="loginmarkcontain02">
+                <h2>登录酷狗音乐</h2>
+                <div class="input01">
+                    <label for="" class="loginmarkcontain02-lable"> 手机号：</label>
+                    <input type="text" class="account" placeholder="请输入手机号">
+                </div>
+                <div class="input01">
+                    <label for="" class="loginmarkcontain02-lable">验证码：</label>
+                    <input type="text" class="account" placeholder="请输入短信验证码">
+                    <a href="" class="verification-code">发送验证码</a>
+                    <div class="loginbtn">登录</div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="header">
+        <ul class="w headerList">
+
+            <li><a href="./index.html">首页</a></li>
+            <li><a href="" class="headerList-a">榜单</a></li>
+            <li><a href="./listen.html">听书</a></li>
+            <li><a href="">直播</a></li>
+            <li><a href="">商城</a></li>
+            <li><a href="">下载酷狗</a></li>
+            <li class="more"><a href="">更多<span class="more-icon"></span></a>
+
+                <div class="xiala">
+                    <div class="triangle"></div>
+                    <ul class="xialaList">
+                        <li>电台</li>
+                        <li>MV</li>
+                        <li>歌单</li>
+                        <li>歌手</li>
+                        <li>专辑</li>
+                    </ul>
+                </div>
+
+            </li>
+        </ul>
+
+    </div>
+    <div class="mainContent">
+        <div class="mainAside">
+            <div class="mainAsideContent">
+                <div class="mainAsideContent-titleBox">
+                    <a href="javascript:;" class="mainAsideContent-title">热门榜单</a>
+                    <i class="mainAsideContent-i"></i>
+                </div>
+
+                <ul class="songsTypeList">
+                    <li class="songsTypeList-li" style="background-color: #169af3;">
+                        <a href="javascript:;" class="songsTypeList-li-a" style="color:#fff"><span
+                                class="songsTypeList-liSpan"></span> 酷狗飙升榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            酷狗TOP500</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            蜂鸟流行音乐榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            抖音热歌榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            快手热歌榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            DJ热歌榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            内地榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            香港地区榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            台湾地区榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            欧美榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            韩国榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            日本榜</a>
+                    </li>
+
+                </ul>
+
+                <div class="mainAsideContent-titleBox">
+                    <a href="javascript:;" class="mainAsideContent-title">特色音乐榜</a>
+                    <i class="mainAsideContent-i"></i>
+                </div>
+
+                <ul class="songsTypeList">
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            酷狗分享榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            ACG新歌榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            电音热歌榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            综艺新歌榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            说唱先锋榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            影视金曲榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            粤语金曲榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            欧美金曲榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            酷狗音乐人原创榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            酷狗雷达榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            80后热歌榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            90后热歌榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            00后热歌榜</a>
+                    </li>
+
+                </ul>
+
+                <div class="mainAsideContent-titleBox">
+                    <a href="javascript:;" class="mainAsideContent-title">全球榜</a>
+                    <i class="mainAsideContent-i"></i>
+                </div>
+
+                <ul class="songsTypeList">
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            美国BillBoard榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            英国单曲榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            日本公信榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            韩国Melon音乐榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            joox本地热歌榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            KKBOX风云榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            日本SPACE SHOWER榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            Beatport电子舞曲榜</a>
+                    </li>
+                    <li class="songsTypeList-li">
+                        <a href="javascript:;" class="songsTypeList-li-a"><span class="songsTypeList-liSpan"></span>
+                            小语种热歌榜</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="mainAsideRight">
+            <div class="mainAsideRightTitle">
+                <div class="title-left">
+                    <h3 class="title-h3">酷狗飙升榜</h3>
+                    <span class="datetime">2022-07-29 更新</span>
+                </div>
+
+                <a href="javascript:;" class="playall">
+                    <span class="playall-span">
+                        <i class="t2"></i>
+                        播放全部
+                    </span>
+                </a>
+
+            </div>
+            <div class="mainAsideRight-content">
+                <div class="selectALL">
+                    <span class="selectALL-box haveSelect_all" id="btn_all"></span>
+                    全选
+                </div>
+                <ul class="mainContent-songsList"></ul>
+
+                <div class="bottomBox">
+                    查看更多内容，请下载客户端
+                    <a href="javascript:;" class="promptly_download">立即下载</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 侧边栏 -->
+    <div class="sidebox">
+
+        <ul class="sideboxul">
+            <li class="sideboxDownloadli01">
+                <div class="sideboxDownload">
+                </div>
+                <p class="sideboxp">下载酷狗</p>
+                <div class="erweima">
+                    <div>
+                        <img src="https://www.kugou.com/common/images/qrcode4home_download.png" width="100%" alt="">
+                    </div>
+                    <p style="font-size: 12px;text-align: center;">下载手机酷狗</p>
+                </div>
+            </li>
+            <li>
+                <div class="songbook">
+                </div>
+                <p class="sideboxp">曲库开放</p>
+            </li>
+            <li>
+                <div class="opinion">
+                </div>
+                <p class="sideboxp">意见反馈</p>
+            </li>
+            <li id="goBack">
+                <div class="goBack">
+                </div>
+                <p class="sideboxp">返回顶部</p>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <div class="footerImg">
+            <ul id="footerImg-ul">
+            </ul>
+        </div>
+        </a>
+        <ul class="footerNews">
+            <li class="footerNewsli01">关于酷狗</li>
+            <li class="footerNewsli01">商务合作</li>
+            <li class="footerNewsli01">广告服务</li>
+            <li class="footerNewsli01">投诉指引</li>
+            <li class="footerNewsli01">隐私政策</li>
+            <li class="footerNewsli01">儿童隐私政策</li>
+            <li class="footerNewsli01">用户服务协议</li>
+            <li class="footerNewsli01">招聘信息</li>
+            <li class="footerNewsli01">客服中心</li>
+            <li class="footerNewsli01">举报中心</li>
+        </ul>
+        <ul class="footerNews">
+            <li class="footerNewsli01">粤网文（2022）1053-085号</li>
+            <li class="footerNewsli01" class="footerNewsli01">网络视听许可证 1910564号</li>
+            <li class="footerNewsli01">增值电信业务 粤B2-20060339</li>
+            <li class="footerNewsli01">粤ICP备09017694号</li>
+        </ul>
+        <ul class="footerNews">
+            <li class="footerNewsli01">粤公网安备 44030002000001号</li>
+            <li class="footerNewsli01" class="footerNewsli01">互联网宗教信息服务许可证 粤（2022）0000022</li>
+            <li class="footerNewsli01">营业执照</li>
+        </ul>
+        <ul class="footerNews">
+            <li>互联网不良信息举报中心</li>
+            <li>酷狗不良信息举报邮箱：jubao_music@kugou.net</li>
+            <li>客服电话：020-29195668（7*24小时热线）</li>
+        </ul>
+        <ul class="footerNews">
+            <li>Copyright &copy; 2004-2022 KuGou-Inc.All Rights Reserved</li>
+
+        </ul>
+    </footer>
+    <script src="./js/songslist.js"></script>
+</body>
+
+</html>

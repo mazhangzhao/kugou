@@ -1,0 +1,1057 @@
+body,
+div,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    *cursor: default;
+    overflow: hidden;
+    font: 16px/1.5 "Microsoft YaHei", Helvetica, STHeiti STXihei, Microsoft JhengHei, Arial;
+}
+
+#pageContain {
+    overflow: hidden;
+}
+
+.page {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contain {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+    z-index: 0;
+}
+
+.current .contain,
+.slide .contain {
+    display: block;
+}
+
+.current {
+    display: block;
+    z-index: 1;
+}
+
+.slide {
+    display: block;
+    z-index: 2;
+}
+
+.swipe {
+    display: block;
+    z-index: 3;
+    transition-duration: 0ms !important;
+    -webkit-transition-duration: 0ms !important;
+}
+
+.loginmark {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 999;
+}
+
+.loginmarkbox {
+    width: 440px;
+    height: 378px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+
+.closeLogin {
+    position: absolute;
+    top: -22px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: url(https://staticssl.kugou.com/common/images/login/clos3.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.pics {
+    width: 100%;
+    display: flex;
+}
+
+.loginmarkboxtop {
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+
+.instructions {
+    width: 139px;
+    height: 34px;
+    position: absolute;
+    right: 60px;
+    background: url(https://staticssl.kugou.com/common/images/login/qrcode_login.png?201904291628);
+    background-position: 0px -165px;
+}
+
+.erweima {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    background: url(https://staticssl.kugou.com/common/images/login/qrcode_login.png?201904291628);
+    background-position: 0px 0px;
+}
+
+.loginmarkcontain {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.loginmarkcontain02 {
+    width: 400px;
+    display: none;
+    margin: 0 auto;
+}
+
+.input01 {
+    width: 400px;
+    height: 44px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    background: #f6f6f6;
+    position: relative;
+}
+
+.loginmarkcontain02-lable {
+    position: absolute;
+    color: #333;
+    font-size: 12px;
+    top: 11px;
+    left: 14px;
+}
+
+.verification-code {
+    position: absolute;
+    top: 10px;
+    right: 26px;
+    color: #0090ff;
+    font-size: 12px;
+}
+
+.loginbtn {
+    width: 100%;
+    height: 40px;
+    background-color: #0090ff;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.account {
+
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 66px;
+    background: transparent;
+    color: #333;
+    line-height: 44px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.loginmarkcontain-img {
+    width: 155px;
+    height: 155px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.loginmarkcontain-p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.loginmarkcontain-a {
+    color: #0090ff;
+}
+
+.page1 {
+    background: url(https://musician.kugou.com/static/images/bg_1.jpg?v=20210601);
+}
+
+.page1Contain {
+    width: 995px;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%);
+}
+
+.page1title {
+    width: 586px;
+    height: 282px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    background: url(https://musician.kugou.com/static/images/kv-20211108.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.containBottom {
+    width: 995px;
+    height: 180px;
+    margin: 0 auto;
+    /* margin-bottom: 20px;  */
+    display: flex;
+    justify-content: space-between;
+}
+
+.containBottom>div {
+    width: 300px;
+    height: 180px;
+    margin-top: 200px;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.containBottom>div:nth-of-type(1) {
+    background: url(../img/bg01.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.containBottom>div:nth-of-type(2) {
+    background: url(../img/bg02.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.containBottom>div:nth-of-type(3) {
+    background: url(../img/bg03.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.containBottombox {
+    width: 240px;
+    height: 112px;
+
+
+}
+
+.title {
+    font-size: 20px;
+    color: #fff;
+}
+
+.containBottombox-p {
+    font-size: 12px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.containBottombox-btn {
+    display: flex;
+    position: relative;
+
+}
+
+.containBottombox-btn div {
+    width: 80px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #000;
+    font-size: 12px;
+    background: linear-gradient(to right, #18f0f7, #f5f973);
+    border-radius: 27px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.containBottombox-btn div:nth-of-type(2) {
+    margin-left: 20px;
+    color: #fff;
+    background: #305ff5;
+}
+
+.containBottombox-btn02::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: -3px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAOCAMAAACFF8VKAAAAM1BMVEUAAAD9+m79+m79+m79+m79+m79+m79+m79+m79+m79+m79+m79+m79+m79+m79+m79+m5mvKCdAAAAEHRSTlMAv4BAr+9wMM+PUBDfn2Ag9/WnvwAAAM1JREFUKM91kFkOxCAMQxO2srX1/U87JjCjqmj8E4k8Y4P8UduPgGTTw4kolpxHFOoGjjE7Ksl4P8jTmbxEQxJN0yAkoQ/Sy1KwrDC3F8IgA9xOzqXErOA4hw1oDNrJNooeKG4cddyDlIr8I7OaiGb6E6pHYc0uRkqBe72dC8dERWMBNimLbB3+nc7kINDxqHaiTnJE9/omJUZzs0GHfEnm5408EeDtboQvaf038sLcRSA9yGORS2r/hDDvxj2mqpiSXiyhS8UQHlFVzfABDCULm1EUuvoAAAAASUVORK5CYII=);
+    width: 20px;
+    height: 8px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.page2 {
+    background: url(https://musician.kugou.com/static/images/bg_2.jpg?v=20210601) no-repeat;
+    background-size: 100% 100%;
+}
+
+.page2box {
+    width: 1288px;
+    height: 328px;
+    margin-top: 150px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    display: flex;
+    justify-content: space-between;
+}
+
+.page2box>div {
+    width: 255px;
+    height: 289px;
+    margin-top: 100px;
+}
+
+.page2box>div:nth-of-type(1) {
+    background: url(../img/page02Bg01.png);
+}
+
+.page2box>div:nth-of-type(2) {
+    background: url(../img/page02Bg02.png);
+}
+
+.page2box>div:nth-of-type(3) {
+    background: url(../img/page02Bg03.png);
+}
+
+.page2box>div:nth-of-type(4) {
+    background: url(../img/page02Bg04.png);
+}
+
+.world {
+    width: 1222px;
+    height: 150px;
+    margin-top: 20px;
+    background: url(https://musician.kugou.com/static/images/zi.png);
+}
+
+.page2contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page3 {
+    background: url(https://musician.kugou.com/static/images/bg_3.png?v=20210601);
+}
+
+.page3Contain {
+    width: 80%;
+    height: 450px;
+    margin: 150px auto;
+}
+
+.page3Containimgbox {
+    width: 150px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+.page3Containbox {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 20px;
+    /* background-color: rgba(2, 50, 247, .5); */
+}
+
+.boxtop {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxtopnav {
+    width: 202px;
+    height: 64px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(2, 50, 247, .5);
+}
+
+.boxtopnav:nth-of-type(1) {
+    border-radius: 20px 0 0 0;
+}
+
+.boxtopnavbackground {
+    color: #000;
+    height: 80px;
+    background: none;
+    background: url(../img/page03Bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.boxtopnav:nth-of-type(6) {
+    border-radius: 0 20px 0 0;
+}
+
+.bigBox {
+    width: 1228px;
+    height: 320px;
+    position: absolute;
+    top: 68px;
+    border-radius: 0 0 20px 20px;
+    background-color: rgba(2, 50, 247, .5);
+    z-index: -1;
+}
+
+.contentimg {
+    height: 100%;
+    display: none;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-top: 50px;
+}
+
+.contentimgLeft {
+    float: left;
+    margin-left: 230px;
+    margin-top: 30px;
+    width: 164px;
+    height: 154px;
+
+}
+
+.contentimgRight {
+    float: left;
+    width: 472px;
+    height: 150px;
+    margin-left: 300px;
+    margin-top: 30px;
+    opacity: 0;
+
+}
+
+.contentimgfromLeft {
+    float: left;
+    margin-left: 130px;
+    width: 246px;
+    height: 230px;
+    opacity: 0;
+}
+
+.contentimgfromRight {
+    float: left;
+    width: 467px;
+    height: 150px;
+    margin-left: 300px;
+    margin-top: 30px;
+    opacity: 0;
+}
+
+.page4 {
+    background: url(../img/page04Bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.page4img {
+    width: 150px;
+    height: 48px;
+    margin: 0 auto;
+}
+
+.boxpage4 {
+    width: 1170px;
+    height: 420px;
+    position: relative;
+    margin: 0px auto;
+    margin-top: 340px;
+}
+
+.boxpage4 img {
+    transition: all 0.5s linear;
+}
+
+.boxpage4 ul {
+    position: relative;
+    width: 1170px;
+    height: 420px;
+    opacity: 0;
+}
+
+.boxpage4 ul li {
+    height: 420px;
+    width: 840px;
+    position: absolute;
+    top: 50%;
+    /*过渡移动的动画*/
+    transition: all 0.5s linear;
+}
+
+/*第一'五张盒子的位置*/
+.boxpage4 ul .show0,
+.boxpage4 ul .show4 {
+    width: 270px;
+    height: 140px;
+    top: 62%;
+    margin-top: -126px;
+    z-index: 77;
+}
+
+.boxpage4 ul .show0 {
+    left: 90px;
+}
+
+.boxpage4 ul .show4 {
+    left: 800px;
+}
+
+/*一、五图片大小*/
+.show0 img,
+.show4 img {
+    width: 270px;
+    height: 140px;
+}
+
+/*二、四盒子的位置*/
+.boxpage4 ul .show1,
+.boxpage4 ul .show3 {
+    width: 450px;
+    height: 234px;
+    top: 50%;
+    margin-top: -126px;
+    z-index: 88;
+}
+
+/*盒子距离*/
+.boxpage4 ul .show1 {
+    left: 140px;
+}
+
+.boxpage4 ul .show3 {
+    left: 584px;
+}
+
+/*第二、四张图片大小*/
+.show1 img,
+.show3 img {
+    width: 450px;
+    height: 234px;
+}
+
+/*第三张盒子的位置*/
+.boxpage4 ul .show2 {
+    height: 390px;
+    width: 754px;
+    left: 210px;
+    top: 0%;
+    z-index: 99;
+}
+
+/*图片大小*/
+.show2 img {
+    height: 390px;
+    width: 754px;
+}
+
+/*按钮位置*/
+.butL,
+.butR {
+    position: absolute;
+    width: 68px;
+    height: 230px;
+    top: 25%;
+    margin-top: -20px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+/*按钮位置*/
+.butL {
+    left: 142px;
+}
+
+.butR {
+    right: 136px;
+    background-image: url(teamdetails/r.png);
+}
+
+.page5 {
+    background: url(https://musician.kugou.com/static/images/bg_5.png?v=20210601) no-repeat;
+    background-size: 100% 100%;
+}
+
+.page5Box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page5BoxContain {
+    width: 100%;
+    height: 490px;
+}
+
+.titleimg {
+    width: 287px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.singerListul {
+    width: 1228px;
+    margin: 0 auto;
+    height: 436px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.singerListui-li {
+    width: 10%;
+    height: 168px;
+    margin: 50px 1% 0;
+    cursor: pointer;
+    display: flex;
+    opacity: 0;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.singerListui-li-img {
+    position: relative;
+    width: 122px;
+    height: 142px;
+}
+
+.singerListui-li-img img {
+    position: absolute;
+}
+
+.singerListui-li-img02 {
+    display: none;
+    opacity: 0.7;
+}
+
+.fans {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: center;
+    top: 40px;
+    z-index: 9;
+}
+
+.singerListui-li:hover .singerListui-li-img02 {
+    display: block;
+}
+
+.singerListui-li:hover .fans {
+    opacity: 1;
+}
+
+.fans span {
+    font-size: 12px;
+    color: #fff;
+}
+
+.singerName {
+    font-size: 16px;
+    color: #fff;
+}
+
+.page6 {
+    background: url(https://musician.kugou.com/static/images/bg_6.png?v=20210601) no-repeat;
+    background-size: 100% 100%;
+}
+
+.page6Box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page6title {
+    width: 498px;
+    height: 58px;
+    margin: 0 auto;
+    /* margin-top: -110px; */
+    background: url(../img/page06title.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.pagecontain {
+    width: 1034px;
+    height: 277px;
+    margin-top: 124px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagecontain>div {
+    width: 278px;
+    height: 278px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.toRight {
+    width: 12px;
+    height: 20px;
+    position: absolute;
+    top: 58px;
+    right: -52px;
+    opacity: 0;
+    background: url(../img/left.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.page06ContainBox {
+    width: 139px;
+    height: 139px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18f0f7;
+    background: url(../img/page06box.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.page06ContainBox-box01 {
+    width: 78px;
+    height: 98px;
+    opacity: 0;
+    position: absolute;
+    top: 30px;
+}
+
+
+.page06ContainBox1 {
+    background: url(../img/page06ContainBox1.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.page06ContainBox_01 {
+    width: 26px;
+    height: 60px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    background: url(../img/page06ContainBox_01.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.page06ContainBox2 {
+    background: url(../img/page06ContainBox2.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.page06ContainBox_02 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 35px;
+    height: 61px;
+    opacity: 0;
+    background: url(../img/page06ContainBox_02.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.page06ContainBox3 {
+    background: url(../img/page06ContainBox3.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.page06ContainBox_03 {
+    position: absolute;
+    top: 0px;
+    left: -6px;
+    width: 36px;
+    height: 62px;
+    opacity: 0;
+    background: url(../img/page06ContainBox_03.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.page6Box-a {
+    width: 180px;
+    height: 39px;
+    line-height: 39px;
+    position: absolute;
+    bottom: 44px;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    opacity: 0;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAABGCAYAAAC9vk0DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkI5QzgzRUJFNjFDQzExRUE5NUY3QjkxN0Q3MDI5NDZFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkI5QzgzRUJGNjFDQzExRUE5NUY3QjkxN0Q3MDI5NDZFIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QjlDODNFQkM2MUNDMTFFQTk1RjdCOTE3RDcwMjk0NkUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QjlDODNFQkQ2MUNDMTFFQTk1RjdCOTE3RDcwMjk0NkUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5QUkVgAAAFdElEQVR42uzd329TdRzG8W/rQCIuEGG7UHdB4rZEwKslJmqiEEUgWaZxoFdi8MYESPTK6D9AvNBo8MILEX/dCBhdEAWNYozRkOwOMBkj4QISzeYS5zCBIM7ns306uq4/1x7Wnu/7lTy06zlrD5+uT9r17DSzcnI6mMzMv9N+Gvyy/GWFX5deVrier5PR5et12qeve3R5r067lTU6367T9tz1FG5LJv98Zv7y+efnb0Mtywqv8+b602W/x7anqvUWbEfx5eW+b8HyTC23Uf5689cpuw2Zyt9f++1Xd3uNuM5QaZ1MLf+nRcyvxM9Qpduo5fJQcb0SP/uZgsdaycdJ8cdMqcdaKL58SuendNmETkeVEZ0/r9NhLTundaaL9dLNx//CfirsjGL9VHidbSFZdylPKU8om5XOAACzT3gsdysbC5aNKaeUb5UhZSKpjcgmdJ3blS+VP5SDynOUH4AqWVc8693xu3fJ9iT6qpFXaM8mdym/KceVAWUZ9yWAOizzLjnu3fJCI1+5NqoAt9jrduVDpZf7DEACrFsOeddsaYYCvFc5rJwMM29sAEDierxzjngHLUkBPqOcUXZwfwBYAoPeQYO3sgBvVw4oR5XV3AcAltBqfyZ4wLsp0QJcq3yv7GXuAJqIddIP3lGJFKC91v5ZeZhZA2hCD3lHVf17wWoL0K7wp8A7vACaW693VVUlWE0BdvjL3nXMFkALWOed1VFvAS5XjgV2cQHQWnq8u5bXU4BvKg8ySwAtyLrrrcUWoO3nx7u9AFrZHu+ymgrwnjD7h8gA0Oqsy7pqKcC3lVXMDUAKWJe9V20BPhnq+NMSAGhCdjitgUoFaF+/w6wApNAbym3lCnBnYGdnAOnU6x1XtADtEPmvMyMAKfZayPsYkfwC3BoWHpsfANLEOm5bsQLcxWwAROD5wgK0t4kHmAuACAx4580VoO0pvYK5AIjACu+8uQLsZyYAItKfK0DbL+Yx5gEgIpus+6wANwQ+2wNAXOx3gBusAPuYBYAI9VkBsu8fgBjNPAO8jzkAiFC3FWAXcwAQoS4rwE7mACBCHVaAK5kDgAjdaQXYzhwARKg9ywwAxMoKcIoxAIjQlBXgP8wBQISuWAGOMQcAERq3ArzEHABE6JIV4AXmACBCo1aAZ5gDgAidtQIcZg4AIjRsBXhWmWQWACIymXsGeEM5xTwARMQ670buL0GOMQ8AEZnpvFwBfq5cZSYAInDVO2+uAO318BBzARCBIe+8kH8whI+YC4AIfJw7k1+AJwL7BAJIN+u4b4oV4LSyn/kASLH93nULCtB8powwIwApZN12OP+CwgL8T3mZOQFIoVfD7H7PJQvQ2O8CjzIrACnydSiyp0upQ+K/ovzNzACkgHXZS8UWlCrAy8pe5gYgBfaEEsc9LfehSJ8oB5kdgBZmHfZpqYWVPhXOmvM0MwTQgk57h4XFFuA1pV8ZZZYAWsiod9e1egrQjCublYvMFEALuOidNV5pxWo/GN3eFHk0sJM0gOY24l11uZqVszVcsb2L8ojyCzMG0IR+9Y6q+pMuszXewJ/+1PJdZg2giVgnbfKOqlp2ETdkv1Tcp+xU/mLuAJbQpHfRvlDhDY9GFWDOEeWBwJ/NAVgadlTnjd5Fi5KtcwPstfYOZWtgVxkAt4Z1zTZlMNTw+74kCjDnpHK/sjvwTjGAZFi3vOhdc6IRV5ht4Mb9qxzyjbMdEO3IC9e5zwDU4bp3Sb93ywfeNQ3RlsAG2zEFv/KsUZ5WHg+z79B0cn8CqGBM+VH5TvlCmUjqhtoS/o/Yhr/vySjrlT6lV+lRupW1yirlDu53IJpndVfC7F4kU8oF5by/xB1WzoW8w9Yn6X8BBgChqUrTS0J+TAAAAABJRU5ErkJggg==) center center no-repeat;
+    background-size: cover;
+}
+
+.markbox {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .6);
+    z-index: -1;
+    opacity: 0;
+}
+
+.markboxcontain {
+    width: 1000px;
+    height: 300px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.markboxcontain-data {
+    width: 300px;
+    height: 180px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.markboxcontain-data-mark {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-left: 40px;
+    flex-direction: column;
+}
+
+.markboxcontain-data-title {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.markboxcontain-data-p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.markboxcontain-data-btn {
+    display: flex;
+}
+
+.markboxcontain-data-btn>div {
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100px;
+    height: 27px;
+    line-height: 27px;
+    border-radius: 14px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.markboxcontain-data-btn01 {
+    background-color: #0090ff;
+}
+
+.markboxcontain-data-btn02 {
+    margin-left: 20px;
+    position: relative;
+    background: #305ff5
+}
+
+.markboxcontain-data-btn02::after {
+    content: "";
+    top: -8px;
+    right: -12px;
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    background: url(../img/newicon.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.closemark {
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, 0);
+
+}
+
+#navBar {
+    z-index: 3;
+    position: absolute;
+    top: 20%;
+    right: 3%;
+}
+
+#navBar .active {
+    /* width: 8px;
+    height: 8px; */
+    background: #ccc;
+}
+
+#navBar li {
+    cursor: pointer;
+    transition: all .7s ease;
+    line-height: 40px;
+    border: 3px solid rgba(255,255,255,.4);
+    text-align: center;
+    margin: 36px 0;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+}
+
+.txt {
+    margin-top: 20%;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+
+}
+
+.navContent {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navContentLeft {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: inline-block;
+    width: 130px;
+    height: 34px;
+    background: url(../img/logo.png);
+}
+
+.index {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 70px;
+    margin-right: 80px;
+
+}
+
+.index::after {
+    content: "";
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    bottom: 0px;
+    right: 2px;
+    border-bottom: 6px solid #0090ff;
+}
+
+.login {
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background: #0090ff;
+    font-size: 20px;
+    border-radius: 100px;
+}
+
+.navContentRight {
+    display: flex;
+    align-items: center;
+}
+
+.kfubox {
+    height: 100%;
+}
+
+.kfu {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid #fff;
+}

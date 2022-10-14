@@ -1,0 +1,474 @@
+.header {
+    background-color: #f5fcff;
+}
+
+.more ul {
+    background-color: #f5fcff;
+
+}
+
+.triangle {
+
+    border-color: transparent transparent #f5fcff transparent;
+
+}
+
+.headList {
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headListul {
+    width: 240px;
+    height: 450px;
+    box-shadow: 0px 2px 6px 0px rgb(0 0 0 / 20%);
+    border-left: 1px solid #e8e8e8;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.headListul-li {
+    width: 32.9%;
+    height: 90px;
+    font-size: 14px;
+    color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+}
+
+
+.shuffling {
+    position: relative;
+    width: 750px;
+    height: 450px;
+    /* z-index: -1; */
+    /* background-image: url(https://www.kugou.com/ts/Public/static/img/zt/bn0006.jpg);
+    background-position: center top;
+    background-repeat: no-repeat; */
+    transition: all 1s;
+}
+
+.btnList {
+    position: absolute;
+    bottom: 18px;
+    left: calc(50% - 40px);
+    width: 140px;
+    height: 14px;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.circle.active {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: all .2s;
+
+}
+
+.leftBtn,
+.rightBtn {
+    position: absolute;
+    top: calc(50% - 15px);
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.leftBtn {
+    left: 16px;
+    background: url(https://www.kugou.com/common/images/icon_arrow_left.png) no-repeat;
+    background-size: 100%;
+}
+
+.rightBtn {
+    right: 16px;
+    background: url(https://www.kugou.com/common/images/icon_arrow_left.png) no-repeat;
+    background-size: 100%;
+    transform: rotate(180deg);
+}
+
+.leftBtn:hover,
+.rightBtn:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.headList-pic img {
+    border-radius: 0;
+}
+
+.headListul-li-a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 90px;
+    color: #b3b3b3;
+    padding-top: 15px;
+
+}
+
+.listtitle {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listtitle-p {
+    font-size: 29px;
+    font-weight: 300;
+    color: gray;
+}
+
+.listtitle-a {
+    font-size: 29px;
+    color: #009af3;
+    font-weight: 300;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exchange {
+    color: #999;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.bookListul {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.bookList-li {
+    height: 205px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.play {
+    color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 16px;
+    position: absolute;
+    bottom: 60px;
+    font-size: 14px;
+    line-height: 16px;
+    left: 20px;
+    padding-left: 18px;
+    background: url(https://www.kugou.com/ts/Public/static/img/icon_play.png) no-repeat;
+    background-size: 12px 15px;
+    background-position: left center;
+    z-index: 1;
+}
+
+.bookList-li::after {
+    content: "";
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 56px;
+    left: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 10px;
+}
+
+.bookList-li:hover .bookName {
+    color: #009af3;
+}
+
+.bookimg {
+    width: 150px;
+    height: 150px;
+}
+
+.bookName {
+    display: inline-block;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.mainLeft {
+    width: 660px;
+}
+
+.mainlist {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainRight {
+    width: 290px;
+}
+
+.mainRightbox01-ul {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.mainRightbox01-ul-li {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.mainRightbox01-ul-li:hover .mainRightbox01-ul-li-a {
+    color: #009af3;
+}
+
+.mainRightbox01-ul-li:hover .rightBookName {
+    color: #009af3;
+}
+
+.mainRight-bookimg {
+    width: 90px;
+    height: 90px;
+    position: relative;
+}
+
+.mainRight-bookimg::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+
+}
+
+.book01::before {
+    background: url(https://www.kugou.com/ts/Public/static/img/icon_rank_top1.png) no-repeat;
+    background-size: 100%;
+}
+
+.book02::before {
+    background: url(https://www.kugou.com/ts/Public/static/img/icon_rank_top2.png) no-repeat;
+    background-size: 100%;
+}
+
+.mainRight-bookimg::after {
+    content: "";
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 10px;
+}
+
+.mainRight-play {
+    font-size: 12px;
+    line-height: 13px;
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 3px;
+    left: 4px;
+    padding-left: 12px;
+    background: url(https://www.kugou.com/ts/Public/static/img/icon_play.png) no-repeat;
+    background-size: 8px 10px;
+    background-position: left center;
+    z-index: 1;
+}
+
+.mainRightbox01-ul-li-a {
+    color: #000;
+    width: 172px;
+    height: 16px;
+    margin-left: 20px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+}
+
+.book03::before {
+    background: url(https://www.kugou.com/ts/Public/static/img/icon_rank_top3.png) no-repeat;
+    background-size: 100%;
+}
+
+.mainRightbox01-ul-li-span {
+    background: rgba(102, 102, 102, 0.1);
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 13px;
+    color: #000;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.rightBookName {
+    font-size: 14px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+footer {
+    background: #2C323B;
+    color: #B1B3B9;
+    margin-top: 70px;
+    padding-bottom: 60px;
+    padding: 50px 0;
+}
+
+.footerImg {
+    margin-bottom: 50px;
+}
+
+.footerImg ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footerImg li {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pic {
+    width: 70px;
+    height: 70px;
+}
+
+.pictitle {
+    color: #B1B3B9;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footerNews {
+    font-size: 12px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footerNewsli01 {
+    color: #B1B3B9;
+    padding: 0 6px;
+    border-right: 1px solid #B1B3B9;
+}
+
+.other {
+    width: 1066px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.booksList-li {
+    width: 300px;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.06);
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.booksList-li-imgBox {
+    width: 70px;
+    height: 70px;
+    position: relative;
+}
+
+.booksList-li-imgBox::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.booksList-li-a {
+    color: #000;
+    width: 172px;
+    height: 20px;
+    margin-left: 20px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+
+}
+
+.booksList-li02 {
+    width: 300px;
+    height: 46px;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.booksList-li02:nth-of-type(10) {
+    border-bottom: none;
+}
+
+.booksList-li02-span {
+    display: inline-block;
+    width: 26px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.booksList-li02-a {
+    margin-left: 10px;
+    width: 220px;
+    height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

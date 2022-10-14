@@ -1,0 +1,471 @@
+.loginmark {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 999;
+}
+
+.loginmarkbox {
+    width: 440px;
+    height: 378px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+
+.closeLogin {
+    position: absolute;
+    top: -22px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: url(https://staticssl.kugou.com/common/images/login/clos3.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.pics {
+    width: 100%;
+    height: 165px;
+    display: flex;
+}
+
+.loginmarkboxtop {
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+
+.instructions {
+    width: 139px;
+    height: 34px;
+    position: absolute;
+    right: 60px;
+    background: url(https://staticssl.kugou.com/common/images/login/qrcode_login.png?201904291628);
+    background-position: 0px -165px;
+}
+
+.erweima01 {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    background: url(https://staticssl.kugou.com/common/images/login/qrcode_login.png?201904291628);
+    background-position: 0px 0px;
+}
+
+.loginmarkcontain {
+    width: 400px;
+    margin: 20px auto;
+}
+
+.loginmarkcontain02 {
+    width: 400px;
+    display: none;
+    margin: 0 auto;
+}
+
+.input01 {
+    width: 400px;
+    height: 44px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    background: #f6f6f6;
+    position: relative;
+}
+
+.loginmarkcontain02-lable {
+    position: absolute;
+    color: #333;
+    font-size: 12px;
+    top: 11px;
+    left: 14px;
+}
+
+.verification-code {
+    position: absolute;
+    top: 10px;
+    right: 26px;
+    color: #0090ff;
+    font-size: 12px;
+}
+
+.loginbtn {
+    width: 100%;
+    height: 40px;
+    background-color: #0090ff;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.account {
+
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 66px;
+    background: transparent;
+    color: #333;
+    line-height: 44px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.loginmarkcontain-img {
+    width: 155px;
+    height: 155px;
+    margin: 0 auto;
+    margin-top: 10px;
+    transition: all .5s;
+}
+
+.loginmarkcontain-p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.loginmarkcontain-a {
+    color: #0090ff;
+}
+
+
+
+.header,
+.xialaList {
+    background-color: #f5fcff;
+}
+
+.triangle {
+    border-color: transparent transparent #f5fcff transparent;
+}
+
+.mainContent {
+    width: 1032px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 50px;
+}
+
+.mainAside {
+    width: 220px;
+
+}
+
+.mainAside {
+    border: 1px solid #eee;
+    padding: 0;
+}
+
+
+
+.mainAsideContent-titleBox {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #eee;
+    justify-content: space-between;
+}
+
+.mainAsideContent-title {
+    display: inline-block;
+    font-size: 16px;
+    color: #555;
+    padding: 12px 20px;
+}
+
+.mainAsideContent-i {
+    display: inline-block;
+    width: 9px;
+    height: 5px;
+    margin-right: 26px;
+    /* transform: rotate(-80deg); */
+    background: url(https://staticssl.kugou.com/common/images/pc_temp_v2/icon_splice.png?20150814) no-repeat;
+    background-position: -450px 0px;
+}
+
+.songsTypeList-li {
+    height: 36px;
+    /* border-bottom: 1px solid #eee; */
+    display: flex;
+    margin-bottom: 4px;
+    align-items: center;
+}
+
+.songsTypeList-li-a {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.songsTypeList-liSpan {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    display: inline-block;
+    /* background: url(https://imge.kugou.com/temppic/20130807/20130807185439172736.png) no-repeat; */
+}
+
+.mainAsideRight {
+    width: 780px;
+}
+
+.mainAsideRightTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-left {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 12px;
+}
+
+.datetime {
+    color: #999;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.title-h3 {
+    font-size: 24px;
+    padding: 0;
+    margin-right: 20px;
+    font-weight: 400;
+}
+
+.t2 {
+    width: 9px;
+    height: 16px;
+    display: inline-block;
+    background: url(https://www.kugou.com/yy/static/images/play_icon.png) no-repeat;
+    margin-right: 10px;
+}
+
+.playall {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.playall-span {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 6px 20px;
+    border-radius: 3px;
+    background-color: #169af3;
+}
+
+.selectALL {
+    border-top: 1px solid #ccc;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    color: #999;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.selectALL-box {
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    box-shadow: 0px 0px 1px black;
+    display: inline-block;
+}
+
+.mainContent-songsList-li_left {
+    display: flex;
+    align-items: center;
+}
+
+.haveSelect_all {
+    background: url(https://staticssl.kugou.com/common/images/pc_temp_v2/icon_splice.png?20150814) no-repeat;
+    background-position: -389px -28px;
+}
+
+.haveSelect {
+    background: url(https://staticssl.kugou.com/common/images/pc_temp_v2/icon_splice.png?20150814) no-repeat;
+    background-position: -389px -28px;
+}
+
+.mainContent-songsList {
+    margin-top: 20px;
+}
+
+.mainContent-songsList-li {
+    height: 55px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+strong {
+    font-size: 18px;
+    font-family: Tahoma;
+    color: #ccc;
+    font-weight: 400;
+    width: 15px;
+    display: inline-block;
+}
+
+.pc_temp_time {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    color: #999;
+    font-size: 14px;
+    margin: -2px 10px 0 26px;
+    /* margin-top: -2px;
+    margin-left: 20px */
+}
+
+.span-icon-new {
+    line-height: 54px;
+    margin: 0 15px;
+}
+
+.pc_temp_icon_new {
+    width: 17px;
+    height: 9px;
+    display: inline-block;
+    background: url(https://staticssl.kugou.com/common/images/pc_temp_v2/icon_splice.png?20150814) no-repeat;
+    background-position: -240px -240px;
+}
+
+.mainContent-songsList-li_right {
+    display: flex;
+    align-items: center;
+}
+
+.pc_temp_tips_r {
+    opacity: 0;
+}
+
+.a1 {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+}
+
+.pc_temp_btn_listen {
+
+    background: url(https://staticssl.kugou.com/common/images/pc_temp_v2/icon_splice.png?20150814) no-repeat;
+    background-position: 0px 0px;
+
+}
+
+.pc_temp_btn_download {
+    margin: 0 7px;
+    background: url(https://staticssl.kugou.com/common/images/pc_temp_v2/icon_splice.png?20150814) no-repeat;
+    background-position: -90px 0px;
+}
+
+.pc_temp_btn_share {
+    background: url(https://staticssl.kugou.com/common/images/pc_temp_v2/icon_splice.png?20150814) no-repeat;
+    background-position: -300px 0px;
+}
+
+.mainContent-songsList-li:hover .pc_temp_tips_r {
+    opacity: 1;
+}
+
+.mainContent-songsList-li:hover .pc_temp_time {
+    color: #009af3;
+}
+
+.mainContent-songsList-li:hover {
+    background: #f5f8fb;
+}
+
+.bottomBox {
+    width: 750px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promptly_download {
+    width: 108px;
+    height: 36px;
+    display: inline-block;
+    text-align: center;
+    line-height: 36px;
+    margin-left: 20px;
+    border-radius: 3px;
+    vertical-align: middle;
+    background-color: #169af3;
+    color: #fff;
+    font-size: 16px;
+}
+
+footer {
+    background: #2C323B;
+    color: #B1B3B9;
+    margin-top: 70px;
+    padding-bottom: 60px;
+    padding: 50px 0;
+}
+
+.footerImg {
+    margin-bottom: 50px;
+}
+
+.footerImg ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footerImg li {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pic {
+    width: 70px;
+    height: 70px;
+}
+
+.pictitle {
+    color: #B1B3B9;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footerNews {
+    font-size: 12px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footerNewsli01 {
+    color: #B1B3B9;
+    padding: 0 6px;
+    border-right: 1px solid #B1B3B9;
+}
